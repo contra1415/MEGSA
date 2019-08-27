@@ -16,9 +16,9 @@
                 <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pacientes</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
                     <a class="dropdown-item" href="#">Buscar Pacientes</a>
-                    <a class="dropdown-item" href="#">Ingresar Pacientes</a>
+                    <a class="dropdown-item" href="add_client.php">Ingresar Pacientes</a>
                     <a class="dropdown-item" href="#">Confirmar Cita</a>
-                    <a class="dropdown-item" href="#">Listar Pacientes</a>
+                    <a class="dropdown-item" href="clients.php">Listar Pacientes</a>
                 </div>
             </li>
             <li class="nav-item active dropdown">

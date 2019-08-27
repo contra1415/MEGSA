@@ -18,13 +18,13 @@ include 'includes/navbar.php'; ?>
 
 <form action="" method="post" enctype="multipart/form-data">
 <div class="form-row">
-<label for="fname">Nombre</label>
+<label for="fname">Nombres</label>
     <div class="form-group col-md-6">
           <input id="fname" type="fname" class="form-control" name="fname" placeholder="First Name" value="<?php echo $user_firstname; ?>">
     </div>
 </div>
 <div class="form-row">
-<label for="lname">Apellido</label>    
+<label for="lname">Apellidos</label>    
     <div class="form-group col-md-6">
       <input type="lname" class="form-control" name="lname" placeholder="Last Name" value="<?php echo $user_lastname; ?>">
     </div>
