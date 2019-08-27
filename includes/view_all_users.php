@@ -31,7 +31,7 @@
         echo "<td>$user_email</td>";
         echo "<td><a href='edit_user.php?source=edit_user&id={$user_id}'>Editar</a></td>";
         echo "<td><a href='users.php?delete={$user_id}'>Eliminar</a></td>";
-        echo "<td><a href='edit_user.php?source=edit_user&id={$user_id}'>Editar Contraseña</a></td>";
+        echo "<td><a href='edit_pass.php?source=edit_pass&id={$user_id}'>Contraseña</a></td>";
         echo "</tr>";
     }
 ?>
