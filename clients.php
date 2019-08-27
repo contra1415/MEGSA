@@ -13,21 +13,14 @@ include 'includes/db.php';?>
     <main role="main" class="container">
 
         <div class="text-center mt-5 pt-5">
-            <h1>Administracion de Usuarios</h1>
+            <h1>Listado de Pacientes</h1>
 <br>
 <div class="text-left">
-<a href='add_user.php'>+ agregar usuario </a>   
+<a href='add_client.php'>+ agregar paciente </a>   
 </div>
 <br>
-<?php include 'includes/view_all_users.php'; ?>
-<?php 
-if(isset($_GET['delete'])){
-        $the_user_id = escape($_GET['delete']);
-        $query = "DELETE FROM users WHERE id = {$the_user_id} ";
-        $delete_user_query = mysqli_query($connection, $query);
-        header("Location: users.php");
-            }  
-?>
+<?php include 'includes/view_all_clients.php'; ?>
+
     </main><!-- /.container -->
 
 
