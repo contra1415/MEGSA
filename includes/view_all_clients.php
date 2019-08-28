@@ -1,12 +1,15 @@
-<table class="table table-bordered table-hover">
-                <thead>
+<table class="table table-hover">
+                <thead class="thead-dark">
                     <tr>
-                        <th>Id</th>
-                        <th>Nombres</th>
-                        <th>Apellidos</th>
-                        <th>Fecha de Nacimiento</th>
-                        <th>Telefono</th>
-                        <th>Correo Electronico</th>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nombres</th>
+                        <th scope="col">Apellidos</th>
+                        <th scope="col">Fecha de Nacimiento</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Correo Electronico</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 
@@ -30,7 +33,6 @@
         echo "<td>$client_lastname</td>";
         echo "<td>$client_dateofbirth</td>";
         echo "<td>$client_phone</td>";
-        echo "<td>$client_email</td>";
         echo "<td>$client_email</td>";
         echo "<td><a href='edit_client.php?source=edit_client&id={$client_id}'>Editar</a></td>";
         echo "<td><a href='client_history.php?client_id={$client_id}'>Historial</a></td>";

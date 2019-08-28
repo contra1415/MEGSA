@@ -9,9 +9,7 @@ include 'includes/db.php';?>
 
 
 <body>
-
-    <main role="main" class="container">
-
+    <main role="main" class="container-fluid">
         <div class="text-center mt-5 pt-5">
             <h1>Listado de Pacientes</h1>
 <br>

@@ -15,7 +15,7 @@ include 'includes/client_info.php';
         <div class="text-left  mt-5 pt-4">
             <h1 class="display-4"><?php echo"$client_firstname"; ?><?php echo" "; ?><?php echo"$client_lastname"; ?></h1>
         </div>
-<div class="row justify-content-between">
+<div class="row justify-content-between rounded">
 <div class="col-4 mt-2 pt-4">
         <h4>Informacion del Paciente</h4>
     <div class="row">
@@ -41,66 +41,107 @@ include 'includes/client_info.php';
         </div>
     </div>
     <div class=" text-left">
-    <h4>Historial Medico</h4>
+    <h4>Historial</h4>
     <br>
     <div class="row">
         <div class=" text-justify col-sm-11">
-            <h6>Medicamentos</h6>
-        
-        <p>Lorem ipsum dolor sit amet, clita laboramus et cum, populo imperdiet eloquentiam id eum. 
-        No argumentum quaerendum neglegentur cum. His ne diam molestie mandamus, cum no regione alterum molestie. 
-        Dolor vocibus an eos, at quot cetero persius pro. Eam recusabo liberavisse in. 
-        Sea corpora perpetua ea, veri gubergren mea ad.</p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalmedicamentos">
+Medicamentos
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modalmedicamentos" tabindex="-1" role="dialog" aria-labelledby="modalmedicamentosTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalmedicamentosTitle">Medicamentos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<p> <?php echo "$client_hist1";?> </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+
         </div>
     </div>
         <br>
     <div class="row">
         <div class=" text-justify col-sm-11">
-            <h6>Obstetrico Ginecologico</h6>
-        
-        <p>Lorem ipsum dolor sit amet, clita laboramus et cum, populo imperdiet eloquentiam id eum. 
-        No argumentum quaerendum neglegentur cum. His ne diam molestie mandamus, cum no regione alterum molestie. 
-        Dolor vocibus an eos, at quot cetero persius pro. Eam recusabo liberavisse in. 
-        Sea corpora perpetua ea, veri gubergren mea ad.</p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalobstetrico">
+Obstetrico Ginecologico
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modalobstetrico" tabindex="-1" role="dialog" aria-labelledby="modalobstetricoTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalobstetricoTitle">Obstetrico Ginecologico</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<p> <?php echo "$client_hist2";?> </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>        
+
         </div>
     </div>
         <br>
     <div class="row">
         <div class=" text-justify col-sm-11">
-            <h6>Quirurgicos</h6>
-        
-        <p>Lorem ipsum dolor sit amet, clita laboramus et cum, populo imperdiet eloquentiam id eum. 
-        No argumentum quaerendum neglegentur cum. His ne diam molestie mandamus, cum no regione alterum molestie. 
-        Dolor vocibus an eos, at quot cetero persius pro. Eam recusabo liberavisse in. 
-        Sea corpora perpetua ea, veri gubergren mea ad.</p>
-        </div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalquirurgicos">
+Quirurgicos
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modalquirurgicos" tabindex="-1" role="dialog" aria-labelledby="modalquirurgicosTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalquirurgicosTitle">Quirurgicos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<p> <?php echo "$client_hist3";?> </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+      </div>
     </div>
-        <br>
-    <div class="row">
-        <div class=" text-justify col-sm-11">
-            <h6>Campo 4</h6>
-        
-        <p>Lorem ipsum dolor sit amet, clita laboramus et cum, populo imperdiet eloquentiam id eum. 
-        No argumentum quaerendum neglegentur cum. His ne diam molestie mandamus, cum no regione alterum molestie. 
-        Dolor vocibus an eos, at quot cetero persius pro. Eam recusabo liberavisse in. 
-        Sea corpora perpetua ea, veri gubergren mea ad.</p>
+  </div>
+</div>           
+
         </div>
     </div>
     </div>
 </div>
         <div class="col-8 mt-2 pt-4">
         <h4>Historial de Citas</h4>
-        <table class="table table-sm">
-    <thead>
-    <tr>
-        <th scope="col">#</th>
-        <th scope="col">Fecha</th>
-        <th scope="col">Comentarios</th>
-        </tr>
-    </thead>
-    <tbody>
-    </tbody>
-</table>
+        + Agregar Cita
+            <?php include 'includes/list_appointments.php'; ?>
         </div>
 </div>
     </main><!-- /.container -->

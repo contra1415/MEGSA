@@ -1,11 +1,14 @@
-<table class="table table-bordered table-hover">
-                <thead>
+<table class="table table-hover">
+                <thead class="thead-dark">
                     <tr>
                         <th>Id</th>
                         <th>Usuario</th>
                         <th>Nombre</th>
                         <th>Apellido</th>
                         <th>Correo Electronico</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
                     </tr>
                 </thead>
                 

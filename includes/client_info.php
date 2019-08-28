@@ -9,6 +9,9 @@
         $client_email          = $row['email'];
         $client_phone          = $row['phone'];
         $client_dateofbirth    = $row['dateofbirth'];
+        $client_hist1          = $row['med_hist_1'];
+        $client_hist2          = $row['med_hist_2'];
+        $client_hist3          = $row['med_hist_3'];
     }
 
     ?>
