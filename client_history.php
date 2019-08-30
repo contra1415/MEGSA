@@ -45,63 +45,13 @@ include 'includes/client_info.php';
     <br>
     <div class="row">
         <div class=" text-justify col-sm-11">
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalmedicamentos">
-Medicamentos
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="modalmedicamentos" tabindex="-1" role="dialog" aria-labelledby="modalmedicamentosTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalmedicamentosTitle">Medicamentos</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-<p> <?php echo "$client_hist1";?> </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Guardar Cambios</button>
-      </div>
-    </div>
-  </div>
-</div>
-
+        <?php include 'includes/client_modal1.php'; ?>
         </div>
     </div>
         <br>
     <div class="row">
         <div class=" text-justify col-sm-11">
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalobstetrico">
-Obstetrico Ginecologico
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="modalobstetrico" tabindex="-1" role="dialog" aria-labelledby="modalobstetricoTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalobstetricoTitle">Obstetrico Ginecologico</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-<p> <?php echo "$client_hist2";?> </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Guardar Cambios</button>
-      </div>
-    </div>
-  </div>
-</div>        
-
+        <?php include 'includes/client_modal2.php'; ?>
         </div>
     </div>
         <br>
@@ -109,7 +59,7 @@ Obstetrico Ginecologico
         <div class=" text-justify col-sm-11">
 
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalquirurgicos">
+<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#modalquirurgicos">
 Quirurgicos
 </button>
 
@@ -140,7 +90,31 @@ Quirurgicos
 </div>
         <div class="col-8 mt-2 pt-4">
         <h4>Historial de Citas</h4>
-        + Agregar Cita
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalagregarcita">
+Agregar Notas
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modalagregarcita" tabindex="-1" role="dialog" aria-labelledby="modalagregarcitaTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalagregarcitaTitle">Agregar Notas</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<p> <?php echo "$client_hist2";?> </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cambios</button>
+      </div>
+    </div>
+  </div>
+</div>  
             <?php include 'includes/list_appointments.php'; ?>
         </div>
 </div>

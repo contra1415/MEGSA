@@ -23,8 +23,8 @@
         $client_firstname      = $row['cfname'];
         $client_lastname       = $row['clname'];
         $client_email          = $row['email'];
-        $client_phone       = $row['phone'];
-        $client_dateofbirth = $row['dateofbirth'];
+        $client_phone          = $row['phone'];
+        $client_dateofbirth    = $row['dateofbirth'];
             
         echo "<tr>";
         

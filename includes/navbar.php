@@ -25,8 +25,6 @@
                 <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sistema</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
                     <a class="dropdown-item" href="users.php">Usuarios</a>
-                    <a class="dropdown-item" href="#">Permisos</a>
-                    <a class="dropdown-item" href="#">Configurar Campos</a>
                     <a class="dropdown-item" href="includes/logout.php">Salir</a>
                 </div>
             </li>
