@@ -7,7 +7,9 @@ include 'includes/psecure.php';
 include 'includes/navbar.php';
 include 'includes/db.php'; 
 include 'includes/client_info.php';
-include 'includes/edit_medhistory.php'
+include 'includes/edit_medhistory.php';
+include 'includes/add_new_notes.php';
+include 'includes/edit_clienthistory_notes.php';
 ?>
 
 

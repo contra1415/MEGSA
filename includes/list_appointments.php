@@ -18,7 +18,7 @@
         echo "<tr>";
         echo "<td>$appointment_date</td>";
         echo "<td>$notes</td>"; 
-        echo "<td><a href='edit_user.php?source=edit_appointment&id={$appointment_id}'>Editar</a></td>";
+        ?><td> <?php include 'includes/edit_notes.php';  ?> </td> <?php
         echo "</tr>";
     }
 ?>
