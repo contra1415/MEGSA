@@ -82,7 +82,7 @@ Agregar Notas
         </button>
       </div>
       <div class="modal-body">
-<p> <?php echo "$client_hist2";?> </p>
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
