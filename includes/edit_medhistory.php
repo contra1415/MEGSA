@@ -15,11 +15,11 @@ $the_client_id = escape($_GET['client_id']);
 if(isset($_POST['edit_modal2'])) {
 $the_client_id = escape($_GET['client_id']);
 
-        $histfield1    = escape($_POST['hist2']);
+        $histfield2    = escape($_POST['hist2']);
         
         $query = "UPDATE clients SET ";
         $query .="med_hist_2  = '{$histfield2}'";
-        $query .= "WHERE id = {$the_client_id} ";
+        $query .= "WHERE id = {$the_client_id} ";   
 
         $edit_client_query = mysqli_query($connection,$query);
 
@@ -28,7 +28,7 @@ $the_client_id = escape($_GET['client_id']);
 if(isset($_POST['edit_modal3'])) {
 $the_client_id = escape($_GET['client_id']);
 
-        $histfield1    = escape($_POST['hist3']);
+        $histfield3    = escape($_POST['hist3']);
         
         $query = "UPDATE clients SET ";
         $query .="med_hist_3  = '{$histfield3}'";
