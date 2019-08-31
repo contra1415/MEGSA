@@ -13,13 +13,20 @@ Medicamentos
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-<p> <?php echo "$client_hist1";?> </p>
-      </div>
+        <div class="modal-body">
+
+    <form action="" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <textarea class="form-control" name="hist1" rows="12"><?php echo "$client_hist1";?></textarea>
+        </div>
+
+      
+        </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Guardar Cambios</button>
-      </div>
+        <button type="submit" name="edit_modal1" class="btn btn-primary">Guardar Cambios</button>
+    </form>
+          </div>
     </div>
   </div>
 </div>
