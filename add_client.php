@@ -18,10 +18,10 @@ include 'includes/navbar.php'; ?>
 <form action="" method="post" enctype="multipart/form-data">
 <div class="form-row">
     <div class="form-group col-md-6">
-      <input type="fname" class="form-control" name="cfname" placeholder="Nombres">
+      <input type="text" class="form-control" name="cfname" placeholder="Nombres">
     </div>
     <div class="form-group col-md-6">
-      <input type="lname" class="form-control" name="clname" placeholder="Apellidos">
+      <input type="text" class="form-control" name="clname" placeholder="Apellidos">
     </div>
 </div>
 <br>
