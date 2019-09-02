@@ -17,8 +17,13 @@
             
         echo "<tr>";
         echo "<td>$appointment_date</td>";
+<<<<<<< HEAD
         echo "<td>$notes</td>"; 
         echo "<td>Editar</td>";
+=======
+        echo "<td>$notes</td>";
+        echo "<td><a href='edit_client_notes.php?source=edit_client&id={$client_id}'>Editar</a></td>";
+>>>>>>> 2c8eeb808f49a674e4e3339111d45e59c7206053
         echo "</tr>";
     }
 ?>
