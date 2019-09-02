@@ -68,8 +68,9 @@ include 'includes/edit_clienthistory_notes.php';
 </div>
         <div class="col-8 mt-2 pt-4">
         <h4>Historial de Citas</h4>
-        <?php include 'includes/add_notes.php'; ?>
+        <a href='edit_client_notes.php?source=edit_client&id=<?php echo $client_id ?>'>Agregar Nota</a></td>
         <?php include 'includes/list_appointments.php'; ?>
+
         </div>
 </div>
     </main><!-- /.container -->
