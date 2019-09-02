@@ -43,31 +43,15 @@ include 'includes/edit_medhistory.php';
         </div>
     </div>
     <div class=" text-left">
-    <h4>Historial</h4>
+    <h4>Attachments</h4>
     <br>
-    <div class="row">
-        <div class=" text-justify col-sm-11">
-        <?php include 'includes/client_modal1.php'; ?>
-        </div>
-    </div>
-        <br>
-    <div class="row">
-        <div class=" text-justify col-sm-11">
-        <?php include 'includes/client_modal2.php'; ?>
-        </div>
-    </div>
-        <br>
-    <div class="row">
-        <div class=" text-justify col-sm-11">
-        <?php include 'includes/client_modal3.php'; ?>
-        </div>
-    </div>
+    
     </div>
 </div>
         <div class="col-8 mt-2 pt-4">
-        <h4>Historial de Citas</h4>
-        <a href='add_notes.php?client_id=<?php echo $client_id ?>'>+ Agregar Nota</a></td>
-        <?php include 'includes/list_appointments.php'; ?>
+        <h3>Notas</h3>
+        <a href='client_history.php?client_id=<?php echo $client_id ?>'>Cancelar</a></td>
+<form></form>
 
         </div>
 </div>
