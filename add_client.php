@@ -15,30 +15,31 @@ include 'includes/navbar.php'; ?>
             <br>
 <?php include 'includes/add_client.php' ; ?>
             <br>
-<form action="" method="post" enctype="multipart/form-data">
+<form class="needs-validation" novalidate action="" method="post" enctype="multipart/form-data">
 <div class="form-row">
     <div class="form-group col-md-6">
-      <input type="text" class="form-control" name="cfname" placeholder="Nombres">
+      <input type="text" class="form-control" name="cfname" placeholder="Nombres" required>
     </div>
     <div class="form-group col-md-6">
-      <input type="text" class="form-control" name="clname" placeholder="Apellidos">
+      <input type="text" class="form-control" name="clname" placeholder="Apellidos" required>
     </div>
 </div>
 <br>
 <div class="form-row">
     <div class="form-group col-md-4">
-      <input type="date" class="form-control" name="dateofbirth" placeholder="Fecha de Nacimiento">
+      <input type="date" class="form-control" name="dateofbirth" placeholder="Fecha de Nacimiento" required>
     </div>
     <div class="form-group col-md-4">
-      <input type="text" class="form-control" name="phone" placeholder="Telefono">
+      <input type="text" class="form-control" name="phone" placeholder="Telefono" required>
     </div>
     <div class="form-group col-md-4">
-      <input type="email" class="form-control" name="email" placeholder="Correo Electronico">
+      <input type="email" class="form-control" name="email" placeholder="Correo Electronico" required>
     </div>
 </div>
 <br>
-   <button type="submit" name="create_client" class="btn btn-primary">Agregar Paciente</button>
+    <button type="submit" name="create_client" class="btn btn-primary">Agregar Paciente</button>
 </form>
+<?php include 'includes/form_valid_script.php'; ?>
         </main><!-- /.container -->
 
 <?php include 'includes/bootstrapjava.php'; ?>

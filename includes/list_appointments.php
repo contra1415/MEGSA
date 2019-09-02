@@ -18,7 +18,7 @@
         echo "<tr>";
         echo "<td>$appointment_date</td>";
         echo "<td>$notes</td>"; 
-        ?><td> <?php include 'includes/edit_notes.php';  ?> </td> <?php
+        echo "<td>Editar</td>";
         echo "</tr>";
     }
 ?>
