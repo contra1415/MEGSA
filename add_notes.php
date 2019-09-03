@@ -51,7 +51,10 @@ include 'includes/edit_medhistory.php';
         <div class="col-8 mt-2 pt-4">
         <h3>Notas</h3>
         <a href='client_history.php?client_id=<?php echo $client_id ?>'>Cancelar</a></td>
-<form></form>
+<br>
+<br>
+
+
 
         </div>
 </div>
